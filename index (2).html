@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CLASSIC BARBER | صالون حلاقة رجالي فاخر</title>
+  <meta name="description" content="CLASSIC BARBER صالون حلاقة رجالي: قصات عصرية، حلاقة ذقن، وعناية متكاملة. احجز موعدك الآن عبر واتساب.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">تخطي إلى المحتوى</a>
+
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="#home" class="logo" aria-label="CLASSIC BARBER - الرئيسية">✂ CLASSIC <span>BARBER</span></a>
+      <nav id="menu" class="menu" aria-label="القائمة الرئيسية">
+        <a href="#services">الخدمات</a>
+        <a href="#gallery">المعرض</a>
+        <a href="#why">لماذا نحن</a>
+        <a href="#reviews">الآراء</a>
+        <a href="#contact">اتصل بنا</a>
+        <a href="#" data-wa class="btn btn-gold btn-sm" target="_blank" rel="noopener">احجز الآن</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <img class="hero-img" id="heroImg" alt="" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">صالون حلاقة رجالي</p>
+        <h1>CLASSIC <span>BARBER</span></h1>
+        <p class="lead" data-tagline></p>
+        <div class="hero-btns">
+          <a href="#" data-wa class="btn btn-gold" target="_blank" rel="noopener">احجز الآن</a>
+          <a href="#services" class="btn btn-line">الخدمات والأسعار</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2 class="title">خدماتنا <small>وأسعارنا</small></h2>
+        <div class="grid services" id="servicesList"></div>
+      </div>
+    </section>
+
+    <section id="gallery" class="alt">
+      <div class="container">
+        <h2 class="title">معرض <small>القصات</small></h2>
+        <div class="grid gallery" id="galleryList"></div>
+      </div>
+    </section>
+
+    <section id="why">
+      <div class="container">
+        <h2 class="title">لماذا <small>تختارنا؟</small></h2>
+        <div class="grid why" id="whyList"></div>
+      </div>
+    </section>
+
+    <section id="reviews" class="alt">
+      <div class="container">
+        <h2 class="title">آراء <small>عملائنا</small></h2>
+        <div class="grid reviews" id="reviewsList"></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="title">العنوان <small>ومواعيد العمل</small></h2>
+        <div class="contact">
+          <div class="card">
+            <h3>مواعيد العمل</h3>
+            <ul class="hours" id="hoursList"></ul>
+          </div>
+          <div class="card">
+            <h3>تواصل معنا</h3>
+            <p class="info"><b>العنوان:</b> <span data-address></span></p>
+            <p class="info"><b>الهاتف:</b> <a href="#" data-tel dir="ltr"></a></p>
+            <div class="hero-btns">
+              <a href="#" data-map class="btn btn-line" target="_blank" rel="noopener">افتح الخريطة</a>
+              <a href="#" data-wa class="btn btn-gold" target="_blank" rel="noopener">احجز عبر واتساب</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container foot">
+      <div>
+        <a href="#home" class="logo">✂ CLASSIC <span>BARBER</span></a>
+        <p class="muted" data-tagline></p>
+      </div>
+      <div class="foot-links">
+        <a href="#services">الخدمات</a>
+        <a href="#gallery">المعرض</a>
+        <a href="#reviews">الآراء</a>
+        <a href="#contact">اتصل بنا</a>
+      </div>
+      <div class="social" id="social"></div>
+    </div>
+    <p class="copy">© <span id="year"></span> CLASSIC BARBER. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <a href="#" data-wa class="wa-float" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
+    <svg viewBox="0 0 32 32" width="30" height="30" fill="#fff" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11 19.8L3 29l6.4-2A13 13 0 1 0 16 3zm0 2.4a10.6 10.6 0 1 1-5.5 19.7l-.4-.2-3.8 1.2 1.2-3.7-.3-.4A10.6 10.6 0 0 1 16 5.4zm-4.2 5.3c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.100s1.400 3.600 1.600 3.800c.2.3 2.700 4.200 6.600 5.700 3.300 1.300 4 1 4.700 1 .7-.1 2.300-.9 2.600-1.800.3-.9.3-1.600.2-1.800-.1-.2-.4-.3-.8-.5l-2.400-1.100c-.3-.1-.6-.2-.8.200l-1.100 1.400c-.2.200-.4.300-.8.100-.4-.2-1.500-.6-2.900-1.800-1.100-1-1.800-2.200-2-2.500-.2-.4 0-.6.200-.8l.6-.7.400-.7c.1-.2 0-.5 0-.7l-1.100-2.600c-.3-.7-.6-.6-.8-.6z"/></svg>
+  </a>
+
+  <dialog id="lightbox" aria-label="عرض الصورة">
+    <button class="lb-close" id="lbClose" aria-label="إغلاق">×</button>
+    <img id="lbImg" alt="">
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
